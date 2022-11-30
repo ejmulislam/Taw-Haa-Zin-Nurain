@@ -1,0 +1,548 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taw Haa Zin Nurain</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <header class="w-full bg-cover bg-center" style="background-image: url(../img/hero.jpg);">
+        <nav class="flex items-center justify-between px-3.5">
+            <!-- logo -->
+            <a href="index.html">
+                <img src="../img/For App-01 1.png" alt="Logo" class="w-56 landscape:w-[180px] leptop:w-72">
+            </a>
+            <!-- logo end -->
+
+            <!-- links -->
+            <div class="hidden tablet:flex items-center font-roboto tablet:text-xl">
+                <!-- all category -->
+                <div class="px-6 py-4 flex items-center cursor-pointer relative group">
+                    <span class="capitalize tablet:text-md text-white font-semibold hover:text-primary pl-4">learning path <i class="text-lg fa-sharp fa-solid fa-chevron-down"></i></span>                    
+
+                    <div class="absolute w-[140%] -left-10 top-full px-6 bg-gray-600 shadow-sm shadow-gray-600 py-3 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+                        <a href="#" class="flex items-center py-3 text-md text-white hover:text-primary transition duration-200">Semester One The Essentials</a>
+                        <a href="#" class="flex items-center py-3 text-md text-white hover:text-primary transition duration-200">Semester Two Foundations</a>
+                        <a href="#" class="flex items-center py-3 text-md text-white hover:text-primary transition duration-200">Semester Three Intermediate</a>
+                        <a href="#" class="flex items-center py-3 text-md text-white hover:text-primary transition duration-200">Semester Four Advanced</a>
+                        <div class=" pt-4 space-y-4">
+                            <a href="#" class="flex items-center justify-center py-3 text-md font-medium rounded-sm text-gray-800 hover:text-white bg-gradient-to-r from-primary to-primary/90 hover:bg-gradient-to-r hover:from-primary/90 hover:to-primary transition duration-300">Explore All Paths</a>
+                            <a href="#" class="flex items-center justify-center py-3 text-md font-medium rounded-sm text-gray-800 hover:text-white bg-gradient-to-r from-primary to-primary/90 hover:bg-gradient-to-r hover:from-primary/90 hover:to-primary transition duration-300">Explore All courses</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- all category end -->
+                <div class="hidden landscape:block tablet:space-x-2 leptop:space-x-8">
+                    <a href="#" class=" font-semibold text-white hover:text-primary capitalize">resources</a>               
+                    <a href="#" class=" font-semibold text-white hover:text-primary capitalize">pricing</a>               
+                    <a href="#" class=" font-semibold text-white hover:text-primary capitalize">contact</a> 
+                </div>              
+            </div>
+            <!-- links end -->
+
+            <!-- author -->
+            <div class="hidden tablet:flex items-center space-x-4">
+                <a href="#" class="text-white bg-primary px-2.5 py-1.5 text-xl rounded capitalize">dashboard</a>
+                <a href="#">
+                    <img src="../icons/Vector.png" alt="Notification" class=" border border-primary px-2 py-2 rounded">
+                </a>
+                <a href="#" class="hover:scale-[0.98] transition duration-300">
+                    <img src="../img/Yamin Tiny 1.png" alt="Author Photo" class="w-17 rounded-full">
+                </a>
+            </div>
+            <!-- author end -->
+
+            
+
+            <!-- toggle -->
+            <button id="hamburger" class="block tablet:hidden text-white text-4xl cursor-pointer">
+                <i class="fa-solid fa-bars"></i>   
+            </button>
+            
+            <!-- toggle end -->
+        </nav>
+
+        <!-- mobile menu link -->
+        <div id="menu" class="hidden w-full absolute px-16 py-10 bg-primary text-white">
+            <div class="flex flex-col space-y-8">
+                <a href="#" class=" font-semibold text-primary hover:text-white bg-gray-400 px-20 py-2 hover:bg-gray-500 hover:shadow-lg capitalize transition duration-300">resources</a>               
+                <a href="#" class=" font-semibold text-primary hover:text-white bg-gray-400 px-20 py-2 hover:bg-gray-500 hover:shadow-lg capitalize transition duration-300">pricing</a>               
+                <a href="#" class=" font-semibold text-primary hover:text-white bg-gray-400 px-20 py-2 hover:bg-gray-500 hover:shadow-lg capitalize transition duration-300">contact</a>               
+                <div class=" pt-4 space-y-4">
+                    <a href="#" class="flex items-center justify-center py-3 text-md font-medium rounded-sm text-gray-800 hover:text-white bg-gradient-to-r from-primary to-red-500 hover:bg-gradient-to-r hover:from-red-500 hover:to-primary transition duration-300 hover:shadow-lg">Explore All Paths</a>
+                    <a href="#" class="flex items-center justify-center py-3 text-md font-medium rounded-sm text-gray-800 hover:text-white bg-gradient-to-r from-primary to-red-500 hover:bg-gradient-to-r hover:from-red-500 hover:to-primary transition duration-300 hover:shadow-lg">Explore All courses</a>
+                </div>
+            </div>    
+        </div>
+        <!-- mobile menu link end -->
+
+        <!-- container area -->
+        <div class="container pb-8">
+            <div class="grid grid-cols-1 tablet:grid-cols-2 items-center gap-35">
+                <!-- content -->
+                <div class=" w-full h-screen text-center tablet:text-left flex justify-center items-center flex-col table:flex tablet:flex-col tablet:items-start tablet:justify-center">
+                    <h1 class="text-5xl tablet:leading-[4.5rem] tablet:text-7xl text-white font-bold font-siliguri">কুরআন শিখুন <br> <span class="text-primary"> সহজ </span>পদ্ধতিতে </h1>
+                    <p class="text-2xl text-white font-normal font-siliguri mt-4">কুরআনের জ্ঞানের খোজে, <br> ত্ব-হা যিন নূরাঈনের আঙিনায় স্বাগতম</p>
+                    <a href="#" class="inline-block tablet:block w-72 py-4 bg-primary text-white  mt-6 text-xl rounded text-center hover:scale-[.98] transition duration-300">কোর্স সমূহ </a>
+                </div>
+                <!-- content end -->
+
+                <!-- login -->
+                <div class="tablet:w-[75%] tablet:ml-auto py-6 px-4 leptop:px-16 tablet:py-6 leptop:py-10 bg-primary rounded-lg space-y-6">
+                    <div class="flex items-center justify-center text-xl tablet:text-2xl">
+                        <a href="#" class="px-5 tablet:px-8 py-3 border-2 rounded-l-md text-gray-800 bg-white font-normal capitalize">login</a>
+                        <a href="#" class="px-5 tablet:px-8 py-3 border-2 rounded-r-md border-gray-300 text-white font-normal capitalize">sign up</a>
+                    </div>
+                    <div class="flex items-center justify-center gap-4">
+                        <a href="#" class="text-center w-1/2 py-3 border-2 rounded-md text-white text-2xl font-normal capitalize">google</a>
+                        <a href="#" class="text-center w-1/2 py-3 border-2 rounded-md border-gray-300 text-white text-2xl font-normal capitalize">facebook</a>
+                    </div>        
+                    <input type="text" class="w-full py-3 border-2 border-gray-300 rounded-md text-white font-normal bg-transparent text-xl capitalize focus:border-white" placeholder="Email">
+                    <input type="text" class="w-full py-3 border-2 border-gray-300 rounded-md text-white font-normal bg-transparent text-xl capitalize focus:border-white" placeholder="Password">
+                    <div class="flex flex-col justify-center items-center space-y-4">
+                        <a href="#" class="inline-block px-8 py-2 border-2 rounded-md text-black bg-white text-2xl shadow-sm font-normal capitalize hover:scale-[.98] transition-all duration-300 hover:bg-primary">login</a>
+                        <a href="#" class="inline-block px-8  rounded-md text-white text-lg font-normal capitalize">forget Password</a>
+                    </div>
+                </div>
+                <!-- login end -->
+            </div>
+        </div>
+        <!-- container area end -->
+    </header>
+    <!-- header end -->
+    
+    <!-- basic cource details -->
+    <div class="container text-center tablet:text-left tablet:flex tablet:items-center py-16">
+        <!-- text -->
+        <h2 class="text-3xl font-medium text-black leading-[49px] py-6 tablet:border-l-8 border-primary pl-6">
+            অভিগজ্ঞ উস্তাদদের সান্যিদ্বে  <a href="#" class="text-primary hover:underline transition duration-300"> কুরআন, হাদিসের </a> আলোকে <br> ইসলামিক বেসিক বিসয়গুলো শিখুন
+        </h2>
+        <!-- text end -->
+
+        <!-- button -->
+        <div class="ml-auto">
+            <a href="#" class="block px-8 py-3 text-4xl tablet:text-2xl font-normal text-white bg-primary rounded-md hover:scale-[.98] transition duration-300">সকল কোর্স</a>
+        </div>
+        <!-- button end -->
+    </div>
+    <!-- basic cource details end -->
+
+    <!-- all courses -->
+    <div class="container pb-16">
+        <div class="grid mobile:grid-cols-1 tablet:grid-cols-4 gap-10">
+            <!-- single cource -->
+            <div class="bg-white rounded-lg">
+                <div class="mb-20 w-full h-72 rounded-lg hover:scale-[.98] transition duration-300" style="background: linear-gradient(180deg, #F34880 0%, #EC454F 100%);">
+                    <a href="#" class="w-full h-full flex items-center justify-center text-center leading-8 text-white font-medium text-2xl font-poppins capitalize">semester one <br> the essentials</a>
+                    <div class="flex items-center justify-between px-8 py-4">
+                        <div class="font-poppins font-medium text-center">
+                            <p class="text-2xl text-gray-800">5</p>
+                            <p class="text-base text-gray-600 capitalize">cources</p>
+                        </div>
+                        <div class="font-poppins font-medium text-center">
+                            <p class="text-2xl text-gray-800">700+</p>
+                            <p class="text-base text-gray-600 capitalize">videos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single cource end -->
+
+             <!-- single cource -->
+             <div class="bg-white rounded-lg">
+                <div class="mb-20 w-full h-72 rounded-lg hover:scale-[.98] transition duration-300" style="background: linear-gradient(180deg, #F34880 0%, #EC454F 100%);">
+                    <a href="#" class="w-full h-full flex items-center justify-center text-center leading-8 text-white font-medium text-2xl font-poppins capitalize">semester one <br> the essentials</a>
+                    <div class="flex items-center justify-between px-8 py-4">
+                        <div class="font-poppins font-medium text-center">
+                            <p class="text-2xl text-gray-800">5</p>
+                            <p class="text-base text-gray-600 capitalize">cources</p>
+                        </div>
+                        <div class="font-poppins font-medium text-center">
+                            <p class="text-2xl text-gray-800">700+</p>
+                            <p class="text-base text-gray-600 capitalize">videos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single cource end -->
+
+             <!-- single cource -->
+             <div class="bg-white rounded-lg">
+                <div class="mb-20 w-full h-72 rounded-lg hover:scale-[.98] transition duration-300" style="background: linear-gradient(180deg, #F34880 0%, #EC454F 100%);">
+                    <a href="#" class="w-full h-full flex items-center justify-center text-center leading-8 text-white font-medium text-2xl font-poppins capitalize">semester one <br> the essentials</a>
+                    <div class="flex items-center justify-between px-8 py-4">
+                        <div class="font-poppins font-medium text-center">
+                            <p class="text-2xl text-gray-800">5</p>
+                            <p class="text-base text-gray-600 capitalize">cources</p>
+                        </div>
+                        <div class="font-poppins font-medium text-center">
+                            <p class="text-2xl text-gray-800">700+</p>
+                            <p class="text-base text-gray-600 capitalize">videos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single cource end -->
+
+             <!-- single cource -->
+             <div class="bg-white rounded-lg">
+                <div class="mb-20 w-full h-72 rounded-lg hover:scale-[.98] transition duration-300" style="background: linear-gradient(180deg, #F34880 0%, #EC454F 100%);">
+                    <a href="#" class="w-full h-full flex items-center justify-center text-center leading-8 text-white font-medium text-2xl font-poppins capitalize">semester one <br> the essentials</a>
+                    <div class="flex items-center justify-between px-8 py-4">
+                        <div class="font-poppins font-medium text-center">
+                            <p class="text-2xl text-gray-800">5</p>
+                            <p class="text-base text-gray-600 capitalize">cources</p>
+                        </div>
+                        <div class="font-poppins font-medium text-center">
+                            <p class="text-2xl text-gray-800">700+</p>
+                            <p class="text-base text-gray-600 capitalize">videos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single cource end -->
+        </div>
+    </div>
+    <!-- all courses end -->
+    
+    <!-- basic cource details -->
+    <div class="container text-center tablet:flex items-center py-16">
+        <!-- text -->
+        <h2 class="py-6 text-3xl font-medium text-black leading-[49px] tablet:border-l-8  border-primary pl-6">
+            গঠনমূলক সিলেবাসের মাদধ্যমে ধাপে ধাপে <br> <a href="#" class="text-primary hover:underline transition duration-300"> ইসলামের খুটিনাটি </a> বিষয়ে জ্ঞান অর্জন করুন
+        </h2>
+        <!-- text end -->
+
+        <!-- button -->
+        <div class="ml-auto">
+            <a href="#" class="inline-block tablet:block px-8 py-3 text-4xl font-normal text-white bg-primary rounded-md hover:scale-[.98] transition duration-300">সকল কোর্স</a>
+        </div>
+        <!-- button end -->
+    </div>
+    <!-- basic cource details end -->
+
+    <!-- course -->
+    <div class="container py-16">
+        <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6">
+            <!-- single grid -->
+        <div class="w-full flex flex-col leptop:flex-row items-center bg-whte bg-white rounded-md pt-6 leptop:pt-0">
+            <!-- book -->
+            <div class="flex justify-center ">
+                <div class="w-52 h-36 bg-tertiary rounded-md hover:scale-[.98] transition duration-300">
+                    <a href="#" class="w-full h-full flex items-center justify-center text-center leading-8 text-white font-medium text-2xl font-poppins capitalize">আকীদা</a>
+                </div>
+            </div>
+            <!-- book end -->
+
+            <!-- text -->
+            <div class="w-2/3 flex flex-col justify-center items-center leptop:items-start leptop:px-6 py-6 space-y-8">
+                <h4 class="text-xl tablet:text-2xl leptop:text-3xl font-poppins text-black font-medium">বেসিক ইসলামিক আকীদা</h4>
+                <div class="flex gap-8 leptop:gap-20">
+                    <div class="flex items-center gap-2">    
+                        <img src="../icons/book-icon.png" alt="Book Icon">
+                        <span class="font-poppins font-medium text-black">22 ক্লাস</span>
+                    </div>
+                    <div class="flex items-center gap-2">    
+                        <img src="../icons/icon-time.png" alt="Book Icon">
+                        <span class="font-poppins font-medium text-black">6+ ঘণ্টা</span>
+                    </div>
+                </div>
+            </div>
+            <!-- text end -->
+        </div>
+        <!-- single grid end -->
+
+        <!-- single grid -->
+        <div class="w-full flex flex-col leptop:flex-row items-center bg-whte bg-white rounded-md pt-6 leptop:pt-0">
+            <!-- book -->
+            <div class="flex justify-center ">
+                <div class="w-52 h-36 bg-tertiary rounded-md hover:scale-[.98] transition duration-300">
+                    <a href="#" class="w-full h-full flex items-center justify-center text-center leading-8 text-white font-medium text-2xl font-poppins capitalize">আকীদা</a>
+                </div>
+            </div>
+            <!-- book end -->
+
+            <!-- text -->
+            <div class="w-2/3 flex flex-col justify-center items-center leptop:items-start leptop:px-6 py-6 space-y-8">
+                <h4 class="text-xl tablet:text-2xl leptop:text-3xl font-poppins text-black font-medium">বেসিক ইসলামিক আকীদা</h4>
+                <div class="flex gap-8 leptop:gap-20">
+                    <div class="flex items-center gap-2">    
+                        <img src="../icons/book-icon.png" alt="Book Icon">
+                        <span class="font-poppins font-medium text-black">22 ক্লাস</span>
+                    </div>
+                    <div class="flex items-center gap-2">    
+                        <img src="../icons/icon-time.png" alt="Book Icon">
+                        <span class="font-poppins font-medium text-black">6+ ঘণ্টা</span>
+                    </div>
+                </div>
+            </div>
+            <!-- text end -->
+        </div>
+        <!-- single grid end -->
+
+        <!-- single grid -->
+        <div class="w-full flex flex-col leptop:flex-row items-center bg-whte bg-white rounded-md pt-6 leptop:pt-0">
+            <!-- book -->
+            <div class="flex justify-center ">
+                <div class="w-52 h-36 bg-tertiary rounded-md hover:scale-[.98] transition duration-300">
+                    <a href="#" class="w-full h-full flex items-center justify-center text-center leading-8 text-white font-medium text-2xl font-poppins capitalize">আকীদা</a>
+                </div>
+            </div>
+            <!-- book end -->
+
+            <!-- text -->
+            <div class="w-2/3 flex flex-col justify-center items-center leptop:items-start leptop:px-6 py-6 space-y-8">
+                <h4 class="text-xl tablet:text-2xl leptop:text-3xl font-poppins text-black font-medium">বেসিক ইসলামিক আকীদা</h4>
+                <div class="flex gap-8 leptop:gap-20">
+                    <div class="flex items-center gap-2">    
+                        <img src="../icons/book-icon.png" alt="Book Icon">
+                        <span class="font-poppins font-medium text-black">22 ক্লাস</span>
+                    </div>
+                    <div class="flex items-center gap-2">    
+                        <img src="../icons/icon-time.png" alt="Book Icon">
+                        <span class="font-poppins font-medium text-black">6+ ঘণ্টা</span>
+                    </div>
+                </div>
+            </div>
+            <!-- text end -->
+        </div>
+        <!-- single grid end -->
+
+        <!-- single grid -->
+        <div class="w-full flex flex-col leptop:flex-row items-center bg-whte bg-white rounded-md pt-6 leptop:pt-0">
+            <!-- book -->
+            <div class="flex justify-center ">
+                <div class="w-52 h-36 bg-tertiary rounded-md hover:scale-[.98] transition duration-300">
+                    <a href="#" class="w-full h-full flex items-center justify-center text-center leading-8 text-white font-medium text-2xl font-poppins capitalize">আকীদা</a>
+                </div>
+            </div>
+            <!-- book end -->
+
+            <!-- text -->
+            <div class="w-2/3 flex flex-col justify-center items-center leptop:items-start leptop:px-6 py-6 space-y-8">
+                <h4 class="text-xl tablet:text-2xl leptop:text-3xl font-poppins text-black font-medium">বেসিক ইসলামিক আকীদা</h4>
+                <div class="flex gap-8 leptop:gap-20">
+                    <div class="flex items-center gap-2">    
+                        <img src="../icons/book-icon.png" alt="Book Icon">
+                        <span class="font-poppins font-medium text-black">22 ক্লাস</span>
+                    </div>
+                    <div class="flex items-center gap-2">    
+                        <img src="../icons/icon-time.png" alt="Book Icon">
+                        <span class="font-poppins font-medium text-black">6+ ঘণ্টা</span>
+                    </div>
+                </div>
+            </div>
+            <!-- text end -->
+        </div>
+        <!-- single grid end -->
+        </div>
+    </div>
+    <!-- course end -->
+    
+    <!-- all text -->
+    <div class="container pt-32 py-16">
+        <div class="w-full text-center tablet:text-left tablet:flex">
+            <!-- text -->
+            <div class="tablet:w-2/3 pb-10">
+                <div class="w-full flex justify-center items-center tablet:justify-start">
+                    <img src="../icons/icon-public.png" alt="Public Icon" class="text-primary flex justify-center w-16 h-16 mb-6">
+                </div>
+                <p class="font-poppins font-medium text-2xl text-black">শেষ জামানায় টিকে থাকতে হলে ইসলামিক জ্ঞান অর্জন খুবই জরুরী</p>
+                <h1 class="text-[55px] font-medium font-poppins text-black">কেন ইসলামিক জ্ঞান অর্জন করব?</h1>
+                <p class="max-w-[90%] mt-2 text-[22px] font-poppins font-medium leading-8">ইসলামে জ্ঞান চর্চার গুরুত্ব অপরিসীম। এ গুরুত্বের কারণেই আল্লাহ তা‘আলা প্রথম মানুষ আদি পিতা আদম (আঃ)-কে সর্বপ্রথম শিক্ষাদান করেন। পবিত্র কুরআনে বলা হয়েছে,وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا ثُمَّ عَرَضَهُمْ عَلَى الْمَلاَئِكَةِ فَقَالَ أَنْبِئُوْنِيْ بِأَسْمَاءِ هَـؤُلاَءِ إِنْ كُنْتُمْ صَادِقِيْنَ- ‘আর আল্লাহ আদমকে সকল বস্ত্তর নাম শিক্ষা দেন। তারপর সেসমস্ত বস্ত্ত ফেরেশতাদের সামনে উপস্থাপন করা হয়। অতঃপর আল্লাহ বলেন, আমাকে তোমরা এগুলোর নাম বলে দাও, যদি তোমরা সত্যবাদী হয়ে থাক’ (বাক্বারাহ ৩১)। ........</p>
+                <a href="#" class="text-primary text-[22px] font-medium font-poppins inline-block mt-4 hover:underline transition duration-300">সম্পূর্ণ পড়ুন</a>
+            </div>
+            <!-- text end -->
+
+            <!-- image -->
+            <div class="tablet:w-1/3 flex items-center">
+                <img src="../img/knowledge-image.png" alt="Knowledge Photo" class="w-full bg-cover bg-center bg-no-repeat">
+            </div>
+            <!-- image end -->
+        </div>
+    </div>
+    <!-- all text end -->
+
+    <!-- all courses -->
+    <div class="pt-20 pb-32 clear-both overflow-x-hidden">
+        <div class="grid grid-cols-1 tablet:grid-cols-5 gap-8">
+            <!-- single grid -->
+            <div class="w-full -rotate-[5deg] bg-white rounded-md">
+                <div class="w-full h-56 bg-primary relative rounded-md hover:scale-[.98] transition duration-300 " style="background: linear-gradient(180deg, #F34880 0%, #EC454F 100%);">
+                    <a href="#" class="absolute flex inset-0 justify-center items-center leading-8 text-white font-medium text-2xl font-poppins capitalize">ইসলামি আকীদা</a>
+                </div>
+                <div class="pl-4 py-4 text-center leading-7">
+                    <p class="text-lg font-poppins font-normal">6+ ঘণ্টার কোর্স </p>
+                    <p class="font-poppins text-black text-lg font-semibold">বেসিক ইসলামি আকীদা</p>
+                </div>
+            </div>  
+            <!-- single grid end -->
+
+            <!-- single grid -->
+            <div class="w-full -rotate-[5deg] bg-white rounded-md">
+                <div class="w-full h-56 bg-primary relative rounded-md hover:scale-[.98] transition duration-300 " style="background: linear-gradient(180deg, #F34880 0%, #EC454F 100%);">
+                    <a href="#" class="absolute flex inset-0 justify-center items-center leading-8 text-white font-medium text-2xl font-poppins capitalize">ইসলামি আকীদা</a>
+                </div>
+                <div class="text-center pl-4 py-4 leading-7">
+                    <p class="text-lg font-poppins font-normal">6+ ঘণ্টার কোর্স </p>
+                    <p class="font-poppins text-black text-lg font-semibold">বেসিক ইসলামি আকীদা</p>
+                </div>
+            </div>  
+            <!-- single grid end -->
+
+            <!-- single grid -->
+            <div class="w-full -rotate-[5deg] bg-white rounded-md">
+                <div class="w-full h-56 bg-primary relative rounded-md hover:scale-[.98] transition duration-300 " style="background: linear-gradient(180deg, #F34880 0%, #EC454F 100%);">
+                    <a href="#" class="absolute flex inset-0 justify-center items-center leading-8 text-white font-medium text-2xl font-poppins capitalize">ইসলামি আকীদা</a>
+                </div>
+                <div class="text-center pl-4 py-4 leading-7">
+                    <p class="text-lg font-poppins font-normal">6+ ঘণ্টার কোর্স </p>
+                    <p class="font-poppins text-black text-lg font-semibold">বেসিক ইসলামি আকীদা</p>
+                </div>
+            </div>  
+            <!-- single grid end -->
+
+            <!-- single grid -->
+            <div class="w-full -rotate-[5deg] bg-white rounded-md">
+                <div class="w-full h-56 bg-primary relative rounded-md hover:scale-[.98] transition duration-300 " style="background: linear-gradient(180deg, #F34880 0%, #EC454F 100%);">
+                    <a href="#" class="absolute flex inset-0 justify-center items-center leading-8 text-white font-medium text-2xl font-poppins capitalize">ইসলামি আকীদা</a>
+                </div>
+                <div class="text-center pl-4 py-4 leading-7">
+                    <p class="text-lg font-poppins font-normal">6+ ঘণ্টার কোর্স </p>
+                    <p class="font-poppins text-black text-lg font-semibold">বেসিক ইসলামি আকীদা</p>
+                </div>
+            </div>  
+            <!-- single grid end -->
+
+            <!-- single grid -->
+            <div class="w-full -rotate-[5deg] bg-white rounded-md">
+                <div class="w-full h-56 bg-primary relative rounded-md hover:scale-[.98] transition duration-300 " style="background: linear-gradient(180deg, #F34880 0%, #EC454F 100%);">
+                    <a href="#" class="absolute flex inset-0 justify-center items-center leading-8 text-white font-medium text-2xl font-poppins capitalize">ইসলামি আকীদা</a>
+                </div>
+                <div class="text-center pl-4 py-4 leading-7">
+                    <p class="text-lg font-poppins font-normal">6+ ঘণ্টার কোর্স </p>
+                    <p class="font-poppins text-black text-lg font-semibold">বেসিক ইসলামি আকীদা</p>
+                </div>
+            </div>  
+            <!-- single grid end -->
+        </div>
+    </div>
+    <!-- all courses end -->
+
+    <!-- testimonial -->
+    <div class="container py-16">
+        <div class="relative flex">
+            <img src="../img/testimonial-image.png" alt="" class="w-full h-screen tablet:h-[300px] rounded-xl">
+            <div class="text-center w-full absolute inset-0 flex flex-col tablet:flex-row justify-center items-center  bg-black bg-opacity-60 text-white transition-all duration-300 rounded-xl">
+                <div class="w-full tablet:w-1/2 text-center tablet:mt-10">
+                    <h2 class="text-3xl font-medium leading-[48px] mb-10">আলহামদুলিল্লাহ! ইতিমধ্যে <br> ৯০০০+ মানুষ প্রতিদিন <br> ইকরা এরাবিক স্কুলের সাথে <br> কুরআন শিখছে</h2>
+                </div>
+                <div class="w-full tablet:w-1/2 flex justify-center items-center">
+                    <div class="w-1/2">
+                        <div class="font-poppins mb-6">
+                            <p class="text-xl mb-3 tablet:text-2xl font-medium">৩০+ জন</p>
+                            <p class="text-3xl tablet:text-[40px] font-medium">শিক্ষক</p>
+                        </div>
+                        <div>
+                            <p class="text-xl mb-3 tablet:text-2xl font-medium">৪ টি গঠনমূলক</p>
+                            <p class="text-3xl tablet:text-[40px] font-medium"> লার্নিং পথ</p>
+                        </div>
+                    </div>
+                    <div class="w-1/2">
+                        <div class="font-poppins mb-6">
+                            <p class="text-xl mb-3 tablet:text-2xl font-medium">৪০+ টি</p>
+                            <p class="text-3xl tablet:text-[40px] font-medium">সিঙ্গেল কোর্স</p>
+                        </div>
+                        <div>
+                            <p class="text-xl mb-3 tablet:text-2xl font-medium"> ৯০০০+ জন</p>
+                            <p class="text-3xl tablet:text-[40px] font-medium"> শিক্ষার্থী</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- testimonial end -->
+
+    <!-- register area -->
+    <div class="container pt-16 pb-32 text-center leptop:text-left">
+        <!-- text -->
+        <div class="font-poppins text-black">
+            <h1 class="text-3xl tablet:text-[45px] font-medium tablet:leading-[56px] mb-8">আজই জয়েন করুন বাংলাদেশের সবচেয়ে <br> ব্যতিক্রমধর্মী <a href="#" class="text-primary hover:underline transition duration-300"> অনলাইন মাদ্রাসায় </a></h1>
+            <p class="text-xl tablet:text-3xl mb-6 font-medium">ফ্রি রেজিস্ট্রেশন করে শেখা শুরু করে দিন</p>
+        </div>
+
+        <!-- text end -->
+
+        <!-- button -->
+        <a href="#" class="px-6 tablet:px-12 py-2 tablet:py-4 text-xl tablet:text-3xl font-poppins inline-block text-white bg-primary rounded-md hover:scale-[.98] transition duration-300">রেজিষ্ট্রেশন করুন</a>
+        <!-- button end -->
+    </div>
+    <!-- register area end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="w-full bg-[#171717]">
+            <div class="container">
+                <div class="grid tablet:grid-cols-3 gap-12 px-16 pb-6 border-b border-gray-300">
+                    <!-- single grid -->
+                    <div class="text-white font-poppins space-y-6 pt-6">
+                        <a href="index.html" class="">
+                            <img src="../img/For App-01 1.png" alt="" class="w-80">
+                        </a>
+                        <!-- text -->
+                        <p class="font-normal text-2xl font-poppins leading-9">
+                            কুরআনের জ্ঞানের খোজে,ত্ব-হা যিন <br> নূরাঈনের আঙিনায় স্বাগতম
+                        </p>
+                        <!-- text end -->
+                        <!-- email -->
+                        <div>
+                            <p class="leading-8 text-gray-400"><strong class="text-white">Email :</strong> info@tawhaazinnurain.com </p>
+                            <p class="leading-8 text-gray-400"><strong class="text-white">Phone :</strong> 017 404 33 580 </p>
+                        </div>
+                        <!-- email end -->
+                    </div>
+                    <!-- single grid end -->
+
+                    <!-- single grid -->
+                    <div class="text-[22px] text-gray-400 font-poppins space-y-6 font-normal flex flex-col">
+                        <!-- links -->
+                        <a href="#" class="font-semibold text-white">কোম্পানী</a>
+                        <a href="#" class="text-gray-400 hover:text-primary">আমাদের সম্পর্কে</a>
+                        <a href="#" class="text-gray-400 hover:text-primary">ক্যারিয়ার</a>
+                        <a href="#" class="text-gray-400 hover:text-primary">প্রাইভেসি পলিসি</a>
+                        <a href="#" class="text-gray-400 hover:text-primary">রিফান্ড পলিসি</a>
+                        <a href="#" class="text-gray-400 hover:text-primary">যোগাযোগ</a>
+                        <!-- links end -->
+                    </div>
+                    <!-- single grid end -->
+
+                    <!-- single grid -->
+                    <div class="text-[22px] text-gray-400 font-poppins space-y-6 font-normal flex flex-col">
+                        <!-- links -->
+                        <a href="#" class="font-semibold text-white">কোর্সসমূহ</a>
+                        <a href="#" class="text-gray-400 hover:text-primary">লার্নিং পথ</a>
+                        <a href="#" class="text-gray-400 hover:text-primary">সকল কোর্স</a>
+                        <a href="#" class="text-gray-400 hover:text-primary">রিসোর্স</a>
+                        <a href="#" class="text-gray-400 hover:text-primary">প্রাসিং</a>
+                        <!-- links end -->
+                    </div>
+                    <!-- single grid end -->
+                </div>
+                <p class="text-white font-poppins font-medium text-center py-6">
+                    &copy; Taw Haa Zin Nurain 2022 | All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="./app.js"></script>
+    <!-- script end -->
+</body>
+</html>
